@@ -11,9 +11,6 @@ public class Main {
             case 1:
                 item = "멜론소다";
                 break;
-            case 2:
-                item = "아메리카노";
-                break;
             default:
                 item = "없는 음료수입니다.다시 실행해주세요.";
         }
