@@ -15,8 +15,9 @@ public class Main {
                 item = "아메리카노";
                 break;
             default:
-                item = "없는 음료수입니다. 다시 실행해주세요.";
+                item = "없는 음료수입니다.다시 실행해주세요.";
         }
+
         System.out.println(item);
     }
 }
