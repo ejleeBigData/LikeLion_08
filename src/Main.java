@@ -1,20 +1,20 @@
-
-class Person {
-    String name;
-    int age;
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age  = age;
-    }
-    public Person() {}
-}
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Person man = new Person("홍길동", 23);
-        Person kid = new Person();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(man.name);
+        int choice = scanner.nextInt();
+        String item = "";
+
+        switch (choice) {
+            case 1:
+                item = "멜론소다";
+                break;
+            default:
+                item = "없는 음료수입니다.다시 실행해주세요.";
+        }
+
+        System.out.println(item);
     }
 }
