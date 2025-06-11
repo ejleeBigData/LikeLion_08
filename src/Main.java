@@ -9,7 +9,6 @@ public class Main {
         System.out.println("2. 아메리카노 1500원");
 
         int choice = scanner.nextInt();
-        int money = scanner.nextInt();
 
         String item = "";
         int price = 0;
@@ -29,6 +28,12 @@ public class Main {
         }
 
         System.out.println(item + "을(를) 선택하셨네요. 금액을 넣어주세요.");
+
+        int money = scanner.nextInt();
+
+        if(money < price) {
+            System.out.println("금액이 부족하여 종료합니다.");
+        }
 
     }
 }
